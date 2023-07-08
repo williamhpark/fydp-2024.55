@@ -10,8 +10,8 @@
 ## How to run
 
 1. Run `uvicorn main:app --reload` to run the server with auto-reloading.
-2. Go to `127.0.0.1:8000/docs` in the browser.
-3. Make API calls within the openapi schema.
+2. Go to `127.0.0.1:8000/docs` in the browser for the Swagger UI page.
+3. Make API calls within the page.
 
 ## How to test
 
