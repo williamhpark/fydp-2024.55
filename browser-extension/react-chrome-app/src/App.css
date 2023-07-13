@@ -1,0 +1,21 @@
+.browserContainer {
+    height: 550px;
+    width: 450px;
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: thin;
+}
+
+.row {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .first-row {
+    background-color: lightblue;
+  }
+  

@@ -1,11 +1,18 @@
+import React from "react";
+import "./Header.css"
 import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 
-const Header = () => {
+interface HeaderProps {
+    changePage: (p: string) => void;
+  }
+
+const Header: React.FC<HeaderProps> = ({changePage}) => {
     return (
-        <div>
-            this is header
-        </div>
+    <Nav>
+          <Nav.Link onClick={() => changePage('user')}>Profile</Nav.Link>
+          <Nav.Link onClick={() => changePage('data')}>Data Settings</Nav.Link>
+          <Nav.Link onClick={() => changePage('wallet')}>Wallet</Nav.Link>
+    </Nav>
     )
 }
 

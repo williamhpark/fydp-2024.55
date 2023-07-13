@@ -1,0 +1,36 @@
+.toggle-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .slider {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+  
+  .slider-ball {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 2px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .slider-ball.on {
+    transform: translateX(20px);
+  }
+  
+  .slider-ball.off {
+    transform: translateX(2px);
+  }
+  
+  .label {
+    font-size: 16px;
+  }

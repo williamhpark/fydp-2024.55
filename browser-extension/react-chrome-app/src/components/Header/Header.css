@@ -1,0 +1,27 @@
+.nav {
+    height: 14%;
+    width: 100%;
+    background: lightgray;
+    display: flex;
+    flex: 0 0 15%;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.nav-link {
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link:hover {
+    background-color: cornflowerblue;
+    border-color: rgb(52, 109, 214);
+}
