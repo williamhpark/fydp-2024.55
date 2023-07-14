@@ -1,2 +1,6 @@
 fastapi[all]
 black
+python-jose[cryptography]
+passlib[bcrypt]
+sqlalchemy<2.0.0
+pytest
