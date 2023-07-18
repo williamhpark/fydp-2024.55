@@ -7,14 +7,9 @@ from fastapi_users_db_sqlalchemy import SQLAlchemyUserDatabase
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from .auth import jwt_bearer_backend
-from .database import Base, async_session_maker, engine
+from .database import async_session_maker
 from .managers import UserManager
 from .models.users import User
-
-
-async def create_db_and_tables():
-    async with engine.begin() as conn:
-        await conn.run_sync(Base.metadata.create_all)
 
 
 async def get_async_session() -> AsyncGenerator[AsyncSession, None]:
